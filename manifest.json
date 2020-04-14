@@ -1,0 +1,20 @@
+{
+    "version": "0.1",
+    "__metadata__": {
+        "license_url": "https://ordata.info/",
+        "licence": "",
+        "url": "https://ordata.info/"
+    },
+    "dumper": {
+        "data_url": [
+            "http://localhost:8081/dataupload/mysrc/kg.json",
+            "http://localhost:8081/dataupload/mysrc/go_mapping.json"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}
