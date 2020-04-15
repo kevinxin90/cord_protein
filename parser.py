@@ -77,7 +77,7 @@ def load_data(data_folder):
     with open(go_mapping) as f2:
         go_mapping_data = json.load(f2)
 
-    res = load_cord(kg_data, 'Protein', 'PR', go_mapping_data)
+    res = load_cord(kg_data,  'Protien', 'PR', go_mapping_data)
     for k, v in res.items():
         v.update({'_id': k})
         yield v
